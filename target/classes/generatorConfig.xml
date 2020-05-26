@@ -1,0 +1,23 @@
+<!DOCTYPE generatorConfiguration PUBLIC
+        "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <context id="simple" targetRuntime="MyBatis3">
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/visualizesong?serverTimezone=UTC"
+                        userId="cooleditphoto"
+                        password="Yale5339nods"/>
+
+        <javaModelGenerator targetPackage="com.qiumuzi.VisualizeSong.Model" targetProject="src/main/java"/>
+
+        <sqlMapGenerator targetPackage="mappers" targetProject="src/main/resources"/>
+
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.qiumuzi.VisualizeSong.Mapper" targetProject="src/main/java"/>
+
+        <table tableName="Photo" />
+        <table tableName="Account" />
+        <table tableName="Song" />
+
+
+    </context>
+</generatorConfiguration>
